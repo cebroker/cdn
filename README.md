@@ -1,2 +1,2 @@
-# cdn
-CDN for all the CEBroker projects
+# CDN
+CDN for all CEBroker projects
