@@ -11,14 +11,16 @@ printf "Making symlinks from oracle libraries\n"
 cd instantclient_12_2
 ln -s libclntsh.so.12.1 libclntsh.so
 ln -s libocci.so.12.1 libocci.so
+cd ..
 
 printf "Instaling libaio dependency\n"
 sudo yum install libaio
 
+
 printf "Adding LD_LIBRARY_PATH to the PATH...\n"
-echo "export LD_LIBRARY_PATH=~/instantclient_12_2" >> .bashrc
+echo "export LD_LIBRARY_PATH=~/instantclient_12_2" >> ~/.bashrc
 
 printf "Applying changes...\n"
-source .bashrc
+source ~/.bashrc
 
-printf "instantclient version 12.2 installed successfully"
+printf "instantclient version 12.2 installed successfully\n\n"
