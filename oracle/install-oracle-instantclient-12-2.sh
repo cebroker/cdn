@@ -25,5 +25,3 @@ printf "Adding LD_LIBRARY_PATH to the PATH...\n"
 echo "export LD_LIBRARY_PATH=~/instantclient_12_2:$:LD_LIBRARY_PATH" >> ~/.bashrc
 
 printf "instantclient version 12.2 installed successfully\n\n"
-
-source ~/.bashrc
